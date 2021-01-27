@@ -1,0 +1,36 @@
+{
+  "name": "template-validator",
+  "version": "1.0.0",
+  "description": "A GitHub Action to validate submitted Issues & Pull Requests against provided Templates.",
+  "main": "dist/index.js",
+  "scripts": {
+    "dev": "nodemon",
+    "build": "ncc build src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flowdify/contribution-inspector.git"
+  },
+  "keywords": [
+    "github",
+    "action",
+    "contribution-inspector"
+  ],
+  "author": "ranemihir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/flowdify/contribution-inspector/issues"
+  },
+  "homepage": "https://github.com/flowdify/contribution-inspector#readme",
+  "dependencies": {
+    "@actions/core": "^1.2.6",
+    "@actions/github": "^4.0.0",
+    "@vercel/ncc": "^0.27.0",
+    "gunzip-file": "^0.1.1",
+    "node-fetch": "^2.6.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.18.0",
+    "nodemon": "^2.0.7"
+  }
+}

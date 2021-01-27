@@ -1,0 +1,23 @@
+name: 'Template Validator'
+author: 'ranemihir/Flowdify'
+description: 'A GitHub Action to validate submitted issues & Pull Requests against provided Templates.'
+branding:
+  icon: 'shield'  
+  color: 'gray-dark'
+
+inputs:
+  token: 
+    description: 'GitHub Access Token'
+    required: true
+  issue--greeting-message:
+    description: 'Message to show when an issue is created successfully'
+    required: false
+    default: 'Thanks for your contribution! :)'
+  pull-request--greeting-message:
+    description: 'Message to show when a pull request is created successfully'
+    required: false
+    default: 'Thanks for your contribution! :)'
+
+runs:
+  using: 'node12'
+  main: 'dist/index.js'

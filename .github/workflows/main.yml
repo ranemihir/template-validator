@@ -1,0 +1,17 @@
+name: Template Validator
+
+on: 
+  issues:
+    types: [opened, edited, reopened]
+  pull_request:
+    types: [opened, edited, reopened]
+
+jobs:
+  contribution_inspector:
+    runs-on: ubuntu-latest
+    name: Template Validator
+    steps:
+    - name: All Checks
+      uses: flowdify/template-validator@v1.0
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
