@@ -2,8 +2,8 @@ name: 'Template Validator'
 author: 'ranemihir/Flowdify'
 description: 'A GitHub Action to validate submitted issues & Pull Requests against provided Templates.'
 branding:
-  icon: 'shield'  
-  color: 'gray-dark'
+  icon: ''  
+  color: ''
 
 inputs:
   token: 
